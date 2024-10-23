@@ -4,3 +4,20 @@
 # Пример: ввод N = 6
 # [20, -90, 15, -34, 10, 0]
 # Вывод: [20, 15, 10, -90, -34, 0]
+import random
+a=0
+l=[]
+N=int(input())
+while a<N:
+    a+=1
+    l+= [random.randint(-100, 100)]
+print (l)
+n=0
+b=list
+c=list
+while n<N:
+    if l[n]>0:
+        c+=(l[n])
+    if l[n] < 0:
+        b+=(l[n])
+print(c,b)

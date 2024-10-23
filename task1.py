@@ -6,3 +6,22 @@
 # 4.YES, если список содержит трехзначное число, состоящее из одинаковых цифр
 # NO в противном случае;
 # 5.список с удаленными первым и последним элементами.
+import random
+N = int(input())
+l=[]
+a=0
+while a<N:
+    a+=1
+    l+= [random.randint(0, 1000)]
+print (l)
+print (len(l))
+print (l[N-1])
+k=list(reversed(l))
+print(k) #3
+if (l== 111)or(l== 222)or(l== 333)or(l== 444)or(l== 555)or(l== 666)or(l== 777)or(l== 888)or(l== 999):
+    print ('yes')
+else: print('no')
+l.pop(0)
+l.pop(-1)
+print (l)
+#5
