@@ -13,11 +13,12 @@ while a<N:
     l+= [random.randint(-100, 100)]
 print (l)
 n=0
-b=list
-c=list
+b=list()
+c=list()
 while n<N:
     if l[n]>0:
-        c+=(l[n])
+        c.append(l[n])
     if l[n] < 0:
-        b+=(l[n])
-print(c,b)
+        b.append(l[n])
+    n+=1
+print(c+b)
