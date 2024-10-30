@@ -21,8 +21,9 @@ a=0
 c=b[::]
 b=l[::]
 while a<N/2:
-    b.pop(a)
+    b.pop(a-N)
     a+=1
 c = list(reversed(c))
 b = list(reversed(b))
 print (c+b)
+

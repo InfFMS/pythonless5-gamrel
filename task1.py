@@ -18,9 +18,15 @@ print (len(l))
 print (l[N-1])
 k=list(reversed(l))
 print(k) #3
-if (l== 111)or(l== 222)or(l== 333)or(l== 444)or(l== 555)or(l== 666)or(l== 777)or(l== 888)or(l== 999):
-    print ('yes')
-else: print('no')
+i=0
+k=0
+while i<N:
+    if (l[i]== 111)or(l[i]== 222)or(l[i]== 333)or(l[i]== 444)or(l[i]== 555)or(l[i]== 666)or(l[i]== 777)or(l[i]== 888)or(l[i]== 999):
+        print ('yes')
+        k-=1
+    i+=1
+    k+=1
+if k==i: print ('No')
 l.pop(0)
 l.pop(-1)
 print (l)
