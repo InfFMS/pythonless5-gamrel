@@ -5,3 +5,25 @@
 # вектор a = [0, 1, 0]
 # вектор b = [1, 0, 0]
 # Угол = 90
+import random
+import math
+a=0
+l=[]
+L=[]
+x=0
+y=0
+Y=0
+i=0
+N=int(input())
+while a<N:
+    a+=1
+    l+= [random.randint(1, 10)]
+    L += [random.randint(1, 10)]
+print (l)
+print (L)
+while i<N:
+    x+=l[i]*L[i]
+    y+=l[i]**2
+    Y+=L[i]**2
+    i += 1
+print(math.acos(x/((y**0.5)*(Y**0.5))))

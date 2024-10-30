@@ -7,3 +7,20 @@
 # Вывод:
 # значение:3 индексы 2 и 3
 # значение:2 индексы 4 и 5
+import random
+a=0
+l=[]
+N=int(input())
+while a<N:
+    a+=1
+    l+= [random.randint(0, 5)]
+print (l)
+a=0
+k=0
+while a<N-1:
+    if l[a]==l[a+1]:
+        print('значение:',l[a],'индекс:', a, 'и', 'индекс:', a+1)
+        k+=1
+    a+=1
+if k==0: print('no')
+
